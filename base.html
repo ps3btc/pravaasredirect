@@ -74,18 +74,18 @@
         </script>
   </head>
       <body onload="{{ load_function }}">
+      
       <center>
-        <p>
-          <b>pravaas.org</b>
-        </p>
-        <a href="/about">about</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/">discuss</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/archives">archives</a>
-      </center>
+      <h3>pravaas.org</h3>
+      <a href="/about">about</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/">discuss</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/archives">archives</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.facebook.com/pages/Pravaas/155400472070">facebook</a></center>
+
 
       {% if load_forum %}
       <center>
         <iframe id="{{ load_forum }}" src="javascript:void(0)" scrolling="no" frameborder="0"></iframe> 
       </center>
       {% endif %}
+
 
 
       {% block content %}{% endblock %}
