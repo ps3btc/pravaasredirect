@@ -48,8 +48,8 @@ class AboutHandler(webapp.RequestHandler):
 def main():
   application = webapp.WSGIApplication([
       ('/redirect', RedirectHandler),
-      ('/', ForumHandler),
-      ('/about', AboutHandler),
+      ('/discuss', ForumHandler),
+      ('/', AboutHandler),
       ('/archives', ArchivesHandler),
       ], debug=True)
   wsgiref.handlers.CGIHandler().run(application)

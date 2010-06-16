@@ -11,7 +11,7 @@
       body
       {
       color: black;
-      background-color: grey;
+      background-color: white;
       margin-top: 3%;
       margin-bottom: 3%;
       margin-right: 10%;
@@ -37,7 +37,7 @@
           function initArchives() {
             document.getElementById("archives_forum_embed").src =
                 "http://groups.google.com/forum/embed/?place=forum/pravaas-archives" +
-                "&showsearch=true&showpopout=true&parenturl=" +
+                "&parenturl=" +
                 encodeURIComponent(window.location.href);
             adjustArchives();
           }
@@ -56,13 +56,13 @@
               height = window.innerHeight;
             }
             var forum_iframe = document.getElementById("forum_forum_embed");
-            forum_iframe.height = Math.max(800, 300);
-            forum_iframe.width = Math.max(600, 800);
+            forum_iframe.height = Math.max(600, 600);
+            forum_iframe.width = Math.max(600, 600);
           }
           function initForum() {
             document.getElementById("forum_forum_embed").src =
                 "http://groups.google.com/forum/embed/?place=forum/pravaas-discuss" +
-                "&showsearch=true&showpopout=true&parenturl=" +
+                "&parenturl=" +
                 encodeURIComponent(window.location.href);
             adjustForum();
           }
@@ -77,7 +77,7 @@
       
       <center>
       <h3>pravaas.org</h3>
-      <a href="/about">about</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/">discuss</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/archives">archives</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.facebook.com/pages/Pravaas/155400472070">facebook</a></center>
+      <a href="/">about</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/discuss">discuss</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/archives">archives</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.facebook.com/pages/Pravaas/155400472070">facebook</a></center>
 
 
       {% if load_forum %}
