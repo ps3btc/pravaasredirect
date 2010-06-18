@@ -51,6 +51,7 @@ def main():
       ('/discuss', ForumHandler),
       ('/', AboutHandler),
       ('/archives', ArchivesHandler),
+      ('/.*', AboutHandler),
       ], debug=True)
   wsgiref.handlers.CGIHandler().run(application)
 
